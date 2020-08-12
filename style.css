@@ -46,4 +46,30 @@
     background-color: rgb(0, 123, 255);
     margin: 8px;
     border-radius: 5px;
+    text-size-adjust: 5px;
+    color: white;
+}
+
+.low {
+    background-color: rgb(0, 123, 255);
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.moderate {
+    background-color: yellow;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.high {
+    background-color: orange;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.extreme {
+    background-color: red;
+    padding: 3px;
+    border-radius: 3px;
 }
