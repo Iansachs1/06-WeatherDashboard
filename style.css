@@ -1,0 +1,49 @@
+.dashboard-head {
+    background-color: rgb(61, 61, 61);
+    border-bottom: solid black 1px;
+}
+
+#search-label {
+    font-weight: 500;
+}
+
+.dashboard-title {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#city-search {
+    width: 66%;
+    margin-left: 15px;
+}
+
+#day-info {
+    margin-top: 10px;
+}
+
+.city-select {
+    background-color: rgb(235, 235, 235);
+    padding-top: 10px;
+}
+
+.city-list {
+    width: 100%;
+    background-color: white;
+    border: solid 1px rgb(211, 211, 211);
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.city {
+    padding: 7px;
+    border-bottom:  solid 1px rgb(211, 211, 211);
+}
+
+.forecast {
+    display: none;
+    background-color: rgb(0, 123, 255);
+    margin: 8px;
+    border-radius: 5px;
+}

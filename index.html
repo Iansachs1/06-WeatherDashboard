@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+    rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    />
+    <link 
+    rel="stylesheet" 
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" 
+    />
+    <link 
+    href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" 
+    rel="stylesheet" 
+    />
+    <link 
+    rel="stylesheet" 
+    href="style.css" 
+    />
+    
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row dashboard-head">
+            <div class="col-md-2"></div>
+            <h1 class="col-md-8 dashboard-title">Weather Dashboard</h1>
+            <div class="col-md-2"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 city-select">
+
+                <label id="search-label" for="city-search">Search for a City:</label>
+                <div class="row">
+                    <input type="text" id="city-search" class="form-control"> 
+                    
+                    <button class="btn btn-primary fas fa-search" id="search-btn">
+                    <!-- <i class="fas fa-search"></i> -->
+                    </button>
+                </div>
+
+                <div class="city-list">
+                    <!-- searched cities go here -->
+                    <div class="city">Austin</div>
+                    <div class="city">Chicago</div>
+                    <div class="city">New York</div>
+                    <div class="city">Orlando</div>
+                    <div class="city">San Francisco</div>
+                    <div class="city">Seattle</div>
+                    <div class="city">Denver</div>
+                    <div class="city">San Diego</div>
+                    
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="card" id="day-info">
+                    <h4 class="card-header" id="cityCurrentWeather">
+                        
+                    </h4>
+                    
+                    <div class="card-body">
+
+                        <div>
+                            Temperature: 
+                            <span id="temp"></span>
+                        </div>
+
+                        <div>
+                            Humidity: 
+                            <span id="humid"></span>
+                        </div>
+
+                        <div>
+                            Wind Speed: 
+                            <span id="wind"></span>
+                        </div>
+
+                        <div>
+                            UV Index: 
+                            <span id="UV"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h5>5-Day Forecast:</h5>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-2 forecast">
+                        <img id="day1Icon" src="">
+                        <div id="day1date"></div>
+                        <div id="day1temp"></div>
+                        <div id="day1humidity"></div>
+                    </div>
+                    <div class="col-md-2 forecast">
+                        <div id="day2date"></div>
+                        <img id="day2Icon" src=""">
+                        <div id="day2temp"></div>
+                        <div id="day2humidity"></div>
+                    </div>
+                    <div class="col-md-2 forecast">
+                        <div id="day3date"></div>
+                        <img id="day3Icon" src=""">
+                        <div id="day3temp"></div>
+                        <div id="day3humidity"></div>
+                    </div>
+                    <div class="col-md-2 forecast">
+                        <div id="day4date"></div>
+                        <img id="day4Icon" src=""">
+                        <div id="day4temp"></div>
+                        <div id="day4humidity"></div>
+                    </div>
+                    <div class="col-md-2 forecast">
+                        <div id="day5date"></div>
+                        <img id="day5Icon" src=""">
+                        <div id="day5temp"></div>
+                        <div id="day5humidity"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
